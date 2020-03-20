@@ -22,8 +22,8 @@ class App extends React.Component {
         { title: "Contact", path: "/contact" }
       ],
       home: {
-        title: "",
-        subtitle: "",
+        title: "Eagle Eye",
+        subtitle: "Quick learner, precise creator.",
         text: "See projects below"
       },
       about: {
@@ -73,6 +73,7 @@ class App extends React.Component {
 
           <Route
             path="/"
+            //exact specifies the exact pathname
             exact
             render={() => (
               <HomePage

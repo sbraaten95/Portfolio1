@@ -47,3 +47,19 @@ code {
   color: #ee6352;
   padding: 10px 15px;
 }
+
+.space-background {
+  background-image: url("./assets/images/space.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sb-light-grey {
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.sb-white {
+  color: white;
+}

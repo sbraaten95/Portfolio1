@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 function Footer() {
   return (
     <footer // mt is margin top
-      className="mt-5"
+      className="mt-5 bg-white"
     >
       <Container fluid={true}>
         <Row // justify-content-between aligns the flex elements within the element at either the start, middle, or end

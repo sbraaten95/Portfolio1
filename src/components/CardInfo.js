@@ -6,9 +6,14 @@ function CardInfo(props) {
 
   return (
     <animated.div className="sb-card-info" style={style}>
-      <p className="sb-card-title">{props.title}</p>
-      <p className="sb-card-subtitle">{props.subtitle}</p>
-      <a href={props.codeLink} target="_blank" rel="noopener noreferrer">
+      <p className="sb-card-title sb-light-grey">{props.title}</p>
+      <p className="sb-card-subtitle sb-white">{props.subtitle}</p>
+      <a
+        className="sb-white"
+        href={props.codeLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View
       </a>
     </animated.div>

@@ -40,7 +40,7 @@ class App extends React.Component {
       <Router>
         {/* p-0 is padding 0 */}
         {/* fluid = true is 100% width for all devices. only use false when fixed size */}
-        <Container className="p-0" fluid={true}>
+        <Container className="p-0 space-background" fluid={true}>
           {/* bg is the background color (for instance, danger is red)
               see more at: https://getbootstrap.com/docs/4.0/utilities/colors/
               
@@ -48,7 +48,7 @@ class App extends React.Component {
               turning from navbar items into the sandwich menu option.
                  - Possible values are: true, sm, md, lg, and xl 
                  - You set it to true if you always want it to be expanded. */}
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar className="border-bottom" bg="white" expand="lg">
             <Navbar.Brand>Scott Braaten</Navbar.Brand>
             <Navbar.Toggle
               // border-0 gets rid of the border around the collapsed navbar

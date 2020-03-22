@@ -16,17 +16,19 @@ function Hero(props) {
           <Col md={8} sm={12} xs={12} className="">
             {props.title && (
               <h1 // display is font size
-                className="display-1 font-weight-bolder"
+                className="display-1 font-weight-bolder sb-light-grey"
               >
                 {props.title}
               </h1>
             )}
             {props.subtitle && (
-              <h3 className="display-4 font-weight-light">{props.subtitle}</h3>
+              <h3 className="display-4 font-weight-light sb-light-grey">
+                {props.subtitle}
+              </h3>
             )}
             {props.text && (
               <h3 // lead is another font size
-                className="lead font-weight-light"
+                className="lead font-weight-light sb-white"
               >
                 {props.text}
               </h3>

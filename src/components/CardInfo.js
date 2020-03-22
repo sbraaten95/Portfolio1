@@ -14,7 +14,7 @@ function CardInfo(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        View
+        View code
       </a>
     </animated.div>
   );

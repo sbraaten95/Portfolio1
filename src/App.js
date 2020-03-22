@@ -22,25 +22,27 @@ class App extends React.Component {
         { title: "Contact", path: "/contact" }
       ],
       home: {
-        title: "Eagle Eye",
-        subtitle: "Quick learner, precise creator.",
-        text: "See projects below"
+        title: "Infinite Possibility",
+        subtitle: "Projects below"
       },
       about: {
-        title: "About Me"
+        title: "Who am I?"
       },
       contact: {
-        title: "Let's Talk"
+        title: "Your thoughts?"
+      },
+      resume: {
+        title: "Resume"
       }
     };
   }
 
   render() {
     return (
-      <Router>
+      <Router className="sb-minheight">
         {/* p-0 is padding 0 */}
         {/* fluid = true is 100% width for all devices. only use false when fixed size */}
-        <Container className="p-0 space-background" fluid={true}>
+        <Container className="p-0 space-background sb-minheight" fluid={true}>
           {/* bg is the background color (for instance, danger is red)
               see more at: https://getbootstrap.com/docs/4.0/utilities/colors/
               
@@ -48,24 +50,26 @@ class App extends React.Component {
               turning from navbar items into the sandwich menu option.
                  - Possible values are: true, sm, md, lg, and xl 
                  - You set it to true if you always want it to be expanded. */}
-          <Navbar className="border-bottom" bg="white" expand="lg">
-            <Navbar.Brand>Scott Braaten</Navbar.Brand>
+          <Navbar className="fixed-top" bg="transparent" expand="lg">
+            <Navbar.Brand className="">
+              <label class="sb-white">Scott Braaten</label>
+            </Navbar.Brand>
             <Navbar.Toggle
               // border-0 gets rid of the border around the collapsed navbar
               className="border-0"
               aria-controls="navbar-toggle"
             />
-            <Navbar.Collapse id="navbar-toggle">
-              {/*ml-auto is margin left auto, shifts navbar components to the left*/}
+            <Navbar.Collapse className="" id="navbar-toggle">
+              {/*ml-auto is margin left auto, shifts navbar components to the right*/}
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
-                  Home
+                  <label class="sb-white">Home</label>
                 </Link>
                 <Link className="nav-link" to="/about">
-                  About
+                  <label class="sb-white">About</label>
                 </Link>
                 <Link className="nav-link" to="/contact">
-                  Contact
+                  <label class="sb-white">Contact</label>
                 </Link>
               </Nav>
             </Navbar.Collapse>
@@ -79,7 +83,6 @@ class App extends React.Component {
               <HomePage
                 title={this.state.home.title}
                 subtitle={this.state.home.subtitle}
-                text={this.state.home.text}
               />
             )}
           />

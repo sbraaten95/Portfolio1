@@ -66,7 +66,9 @@ class ContactPage extends React.Component {
         <Content>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
-              <Form.Label htmlFor="full-name">Full Name</Form.Label>
+              <Form.Label className="sb-white" htmlFor="full-name">
+                Full Name
+              </Form.Label>
               <Form.Control
                 id="full-name"
                 name="name"
@@ -77,7 +79,9 @@ class ContactPage extends React.Component {
             </Form.Group>
 
             <Form.Group>
-              <Form.Label htmlFor="email">Email</Form.Label>
+              <Form.Label className="sb-white" htmlFor="email">
+                Email
+              </Form.Label>
               <Form.Control
                 id="email"
                 name="email"
@@ -88,7 +92,9 @@ class ContactPage extends React.Component {
             </Form.Group>
 
             <Form.Group>
-              <Form.Label htmlFor="message">Message</Form.Label>
+              <Form.Label className="sb-white" htmlFor="message">
+                Message
+              </Form.Label>
               <Form.Control
                 id="message"
                 name="message"

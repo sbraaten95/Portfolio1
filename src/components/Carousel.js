@@ -4,9 +4,10 @@ import Row from "react-bootstrap/Row";
 
 import Card from "./Card.js";
 
-import edit from "../assets/images/edit.png";
-import red from "../assets/images/red.jpg";
-import screen from "../assets/images/screen.png";
+import django from "../assets/images/django.png";
+import mean from "../assets/images/MEAN.png";
+import rails from "../assets/images/rails.png";
+import ajax from "../assets/images/ajax1.jpg";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -15,29 +16,39 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "Alchemy",
-          subtitle: "Concoct your cognitive optimization.",
-          imgSrc: edit,
-          websiteLink: "dsal",
-          codeLink: "",
+          title: "FitnessApp with Django",
+          subtitle: "Utilizes the Nutritionix API for food data.",
+          imgSrc: django,
+          websiteLink: "",
+          codeLink: "https://github.com/Sunk1st/FitnessApp",
           selected: false
         },
         {
           id: 1,
-          title: "Associate",
-          subtitle: "See how random things relate.",
-          imgSrc: red,
-          websiteLink: "afs",
-          codeLink: "",
+          title: "BucketList with MEAN",
+          subtitle: "Sample bucket list app.",
+          imgSrc: mean,
+          websiteLink: "",
+          codeLink: "https://github.com/sbraaten95/BucketList",
           selected: false
         },
         {
           id: 2,
-          title: "Fleet",
-          subtitle: "Sedan, SUV and Limo service.",
-          imgSrc: screen,
-          websiteLink: "asdf",
-          codeLink: "https://github.com/sbraaten95/Fleet",
+          title: "Blog with RoR",
+          subtitle: "A sample blog app.",
+          imgSrc: rails,
+          websiteLink: "",
+          codeLink:
+            "https://github.com/sbraaten95/coding_dojo_ruby_on_rails_web_development/tree/master/rails/blog",
+          selected: false
+        },
+        {
+          id: 3,
+          title: "Rails Ajax Pagination",
+          subtitle: "Tweaking the pagination gem with ajax.",
+          imgSrc: ajax,
+          websiteLink: "",
+          codeLink: "https://github.com/sbraaten95/RailsAjaxPagination",
           selected: false
         }
       ]

@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import ResumePage from "./pages/ResumePage";
 
 class App extends React.Component {
   constructor(props) {
@@ -28,18 +29,18 @@ class App extends React.Component {
       about: {
         title: "Who am I?"
       },
-      contact: {
-        title: "Your thoughts?"
-      },
       resume: {
         title: "Resume"
+      },
+      contact: {
+        title: "Your thoughts?"
       }
     };
   }
 
   render() {
     return (
-      <Router className="sb-minheight">
+      <Router className="">
         {/* p-0 is padding 0 */}
         {/* fluid = true is 100% width for all devices. only use false when fixed size */}
         <Container className="p-0 space-background sb-minheight" fluid={true}>
@@ -50,26 +51,29 @@ class App extends React.Component {
               turning from navbar items into the sandwich menu option.
                  - Possible values are: true, sm, md, lg, and xl 
                  - You set it to true if you always want it to be expanded. */}
-          <Navbar className="fixed-top" bg="transparent" expand="lg">
+          <Navbar className="m-2" bg="transparent" expand="lg">
             <Navbar.Brand className="">
-              <label class="sb-white">Scott Braaten</label>
+              <label class="sb-white sc-custom-text-1">Scott Braaten</label>
             </Navbar.Brand>
             <Navbar.Toggle
               // border-0 gets rid of the border around the collapsed navbar
-              className="border-0"
+              className="border-0 bg-white"
               aria-controls="navbar-toggle"
             />
             <Navbar.Collapse className="" id="navbar-toggle">
               {/*ml-auto is margin left auto, shifts navbar components to the right*/}
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
-                  <label class="sb-white">Home</label>
+                  <label class="sb-white sc-custom-text-1">Home</label>
                 </Link>
                 <Link className="nav-link" to="/about">
-                  <label class="sb-white">About</label>
+                  <label class="sb-white sc-custom-text-1">About</label>
+                </Link>
+                <Link className="nav-link" to="/resume">
+                  <label class="sb-white sc-custom-text-1">Resume</label>
                 </Link>
                 <Link className="nav-link" to="/contact">
-                  <label class="sb-white">Contact</label>
+                  <label class="sb-white sc-custom-text-1">Contact</label>
                 </Link>
               </Nav>
             </Navbar.Collapse>
@@ -90,6 +94,11 @@ class App extends React.Component {
             path="/about"
             exact
             render={() => <AboutPage title={this.state.about.title} />}
+          />
+          <Route
+            path="/resume"
+            exact
+            render={() => <ResumePage title={this.state.resume.title} />}
           />
           <Route
             path="/contact"

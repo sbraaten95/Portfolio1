@@ -68,3 +68,25 @@ code {
   min-height: 100vh;
   overflow: hidden;
 }
+
+.sc-custom-text-1 {
+  font-family: "Alegreya";
+}
+
+.sb-tnr {
+  font-family: "Times New Roman";
+}
+
+#about-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 80%;
+  margin-left: 10%;
+}
+
+.sb-neg-mar-bot {
+  margin-bottom: -50px;
+}
+
+.sb-mar-bot {
+  margin-bottom: 5%;
+}

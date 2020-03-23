@@ -63,7 +63,7 @@ class ContactPage extends React.Component {
     return (
       <div>
         <Hero title={this.props.title} />
-        <Content>
+        <Content className="">
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
               <Form.Label className="sb-white" htmlFor="full-name">
@@ -106,7 +106,7 @@ class ContactPage extends React.Component {
             </Form.Group>
 
             <Button
-              className="d-inline-block"
+              className="d-inline-block mb-5"
               variant="primary"
               type="submit"
               disabled={this.state.disabled}

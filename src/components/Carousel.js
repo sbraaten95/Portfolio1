@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Card from "./Card.js";
 
 import django from "../assets/images/django.png";
-import mean from "../assets/images/MEAN.png";
+import mean from "../assets/images/mean1.png";
 import rails from "../assets/images/rails.png";
 import ajax from "../assets/images/ajax1.jpg";
 

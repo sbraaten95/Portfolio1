@@ -3,6 +3,11 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+
+import downloadImg from "../assets/images/download.png";
+
+import { Link } from "react-router-dom";
 
 function Hero(props) {
   const fontSizeAlter = title => {
@@ -26,7 +31,18 @@ function Hero(props) {
               <h1 // display is font size
                 className={fontSizeAlter(props.title)}
               >
-                {props.title}
+                {`${props.title}\t`}
+                {props.title === "Download Resume" ? (
+                  <Link to="/files/Resume.pdf" target="_blank" download>
+                    <Image
+                      width="100px"
+                      height="100px"
+                      src={downloadImg}
+                    ></Image>
+                  </Link>
+                ) : (
+                  ""
+                )}
               </h1>
             )}
             {props.subtitle && (

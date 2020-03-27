@@ -38,9 +38,8 @@ function AboutPage(props) {
         </h5>
         <h5 class="sc-custom-text-1 sb-white sb-mar-bot">
           Over the next year while I finish my Bachelor's, I aim to develop my
-          skills in React, Angular, Node, Python, and CSS. I wish to do that by
-          working with a team of programmers to create and maintain something
-          great.
+          skills in Front End Development. I wish to do that by creating and
+          maintaing great programs alongside a team of programmers.
         </h5>
       </Content>
     </div>

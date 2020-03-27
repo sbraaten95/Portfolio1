@@ -9,7 +9,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
+// import ContactPage from "./pages/ContactPage";
 import ResumePage from "./pages/ResumePage";
 
 class App extends React.Component {
@@ -19,8 +19,8 @@ class App extends React.Component {
       title: "Scott Braaten",
       headerLinks: [
         { title: "Home", path: "/" },
-        { title: "About", path: "/about" },
-        { title: "Contact", path: "/contact" }
+        { title: "About", path: "/about" }
+        // { title: "Contact", path: "/contact" }
       ],
       home: {
         title: "Infinite Possibility",
@@ -30,11 +30,11 @@ class App extends React.Component {
         title: "Who am I?"
       },
       resume: {
-        title: "Resume"
-      },
-      contact: {
-        title: "Your thoughts?"
+        title: "Download Resume"
       }
+      // contact: {
+      //   title: "Your thoughts?"
+      // }
     };
   }
 
@@ -72,9 +72,9 @@ class App extends React.Component {
                 <Link className="nav-link" to="/resume">
                   <label className="sb-white sc-custom-text-1">Resume</label>
                 </Link>
-                <Link className="nav-link" to="/contact">
+                {/* <Link className="nav-link" to="/contact">
                   <label className="sb-white sc-custom-text-1">Contact</label>
-                </Link>
+                </Link> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -100,11 +100,11 @@ class App extends React.Component {
             exact
             render={() => <ResumePage title={this.state.resume.title} />}
           />
-          <Route
+          {/* <Route
             path="/contact"
             exact
             render={() => <ContactPage title={this.state.contact.title} />}
-          />
+          /> */}
 
           <Footer />
         </Container>

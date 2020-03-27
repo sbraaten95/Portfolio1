@@ -53,7 +53,7 @@ class App extends React.Component {
                  - You set it to true if you always want it to be expanded. */}
           <Navbar className="m-2" bg="transparent" expand="lg">
             <Navbar.Brand className="">
-              <label class="sb-white sc-custom-text-1">Scott Braaten</label>
+              <label className="sb-white sc-custom-text-1">Scott Braaten</label>
             </Navbar.Brand>
             <Navbar.Toggle
               // border-0 gets rid of the border around the collapsed navbar
@@ -64,16 +64,16 @@ class App extends React.Component {
               {/*ml-auto is margin left auto, shifts navbar components to the right*/}
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
-                  <label class="sb-white sc-custom-text-1">Home</label>
+                  <label className="sb-white sc-custom-text-1">Home</label>
                 </Link>
                 <Link className="nav-link" to="/about">
-                  <label class="sb-white sc-custom-text-1">About</label>
+                  <label className="sb-white sc-custom-text-1">About</label>
                 </Link>
                 <Link className="nav-link" to="/resume">
-                  <label class="sb-white sc-custom-text-1">Resume</label>
+                  <label className="sb-white sc-custom-text-1">Resume</label>
                 </Link>
                 <Link className="nav-link" to="/contact">
-                  <label class="sb-white sc-custom-text-1">Contact</label>
+                  <label className="sb-white sc-custom-text-1">Contact</label>
                 </Link>
               </Nav>
             </Navbar.Collapse>

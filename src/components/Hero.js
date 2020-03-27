@@ -5,6 +5,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Hero(props) {
+  const fontSizeAlter = title => {
+    if (title === "Who am I?")
+      return "display-1 font-weight-bolder sb-light-grey sc-custom-text-1 sb-neg-mar-bot";
+    if (title === "Resume")
+      return "display-9 font-weight-bolder sb-light-grey sc-custom-text-1";
+    else return "display-1 font-weight-bolder sb-light-grey sc-custom-text-1";
+  };
+
   return (
     <Jumbotron //jumbotron fluid makes it so that corners are not rounded off
       className="bg-transparent jumbotron-fluid p-0"
@@ -16,11 +24,7 @@ function Hero(props) {
           <Col md={8} sm={12} xs={12} className="">
             {props.title && (
               <h1 // display is font size
-                className={
-                  props.title === "Who am I?"
-                    ? "display-1 font-weight-bolder sb-light-grey sc-custom-text-1 sb-neg-mar-bot"
-                    : "display-1 font-weight-bolder sb-light-grey sc-custom-text-1"
-                }
+                className={fontSizeAlter(props.title)}
               >
                 {props.title}
               </h1>

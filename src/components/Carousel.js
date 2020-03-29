@@ -26,7 +26,7 @@ class Carousel extends React.Component {
         {
           id: 1,
           title: "liveLive with MEAN",
-          subtitle: "Have YouTube video watching parties over the internet.",
+          subtitle: "Watch a YouTube video live with a friend.",
           imgSrc: mean,
           websiteLink: "",
           codeLink: "https://github.com/sbraaten95/liveLive",

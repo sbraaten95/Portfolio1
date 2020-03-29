@@ -53,7 +53,9 @@ class App extends React.Component {
                  - You set it to true if you always want it to be expanded. */}
           <Navbar className="m-2" bg="transparent" expand="lg">
             <Navbar.Brand className="">
-              <label className="sb-white sc-custom-text-1">Scott Braaten</label>
+              <label className="sb-white sc-custom-text-1">
+                {this.state.title}
+              </label>
             </Navbar.Brand>
             <Navbar.Toggle
               // border-0 gets rid of the border around the collapsed navbar

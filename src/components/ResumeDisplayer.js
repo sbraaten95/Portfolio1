@@ -8,7 +8,7 @@ function ResumeDisplayer(props) {
   return (
     <div>
       <Jumbotron className="bg-transparent jumbotron-fluid p-0">
-        <Container>
+        <Container className="pl-5">
           <iframe
             title="resume"
             width="1000px"

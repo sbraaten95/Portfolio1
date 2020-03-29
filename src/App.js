@@ -53,7 +53,7 @@ class App extends React.Component {
                  - You set it to true if you always want it to be expanded. */}
           <Navbar className="m-2" bg="transparent" expand="lg">
             <Navbar.Brand className="">
-              <label className="sb-white sc-custom-text-1">
+              <label className="sb-white sc-custom-text-1 sb-name">
                 {this.state.title}
               </label>
             </Navbar.Brand>

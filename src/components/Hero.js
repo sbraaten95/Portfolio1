@@ -14,10 +14,10 @@ import { Link } from "react-router-dom";
 function Hero(props) {
   const fontSizeAlter = title => {
     if (title === "Who am I?")
-      return "display-1 font-weight-bolder sb-light-grey sc-custom-text-1 sb-neg-mar-bot";
+      return "display-3 font-weight-bolder sb-light-grey sc-custom-text-1 sb-neg-mar-bot";
     if (title === "Resume")
       return "display-9 font-weight-bolder sb-light-grey sc-custom-text-1";
-    else return "display-1 font-weight-bolder sb-light-grey sc-custom-text-1";
+    else return "display-3 font-weight-bolder sb-light-grey sc-custom-text-1";
   };
 
   return (

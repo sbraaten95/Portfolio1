@@ -25,11 +25,11 @@ class Carousel extends React.Component {
         },
         {
           id: 1,
-          title: "BucketList with MEAN",
-          subtitle: "Sample bucket list app.",
+          title: "liveLive with MEAN",
+          subtitle: "Have YouTube video watching parties over the internet.",
           imgSrc: mean,
           websiteLink: "",
-          codeLink: "https://github.com/sbraaten95/BucketList",
+          codeLink: "https://github.com/sbraaten95/liveLive",
           selected: false
         },
         {

@@ -66,13 +66,13 @@ class App extends React.Component {
               {/*ml-auto is margin left auto, shifts navbar components to the right*/}
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
-                  <label className="sb-white sc-custom-text-1">Home</label>
+                  <span className="sb-white sc-custom-text-1">Home</span>
                 </Link>
                 <Link className="nav-link" to="/about">
-                  <label className="sb-white sc-custom-text-1">About</label>
+                  <span className="sb-white sc-custom-text-1">About</span>
                 </Link>
                 <Link className="nav-link" to="/resume">
-                  <label className="sb-white sc-custom-text-1">Resume</label>
+                  <span className="sb-white sc-custom-text-1">Resume</span>
                 </Link>
                 {/* <Link className="nav-link" to="/contact">
                   <label className="sb-white sc-custom-text-1">Contact</label>

@@ -10,6 +10,7 @@ function ResumeDisplayer(props) {
       <Jumbotron className="bg-transparent jumbotron-fluid p-0">
         <Container className="pl-5">
           <iframe
+            className="sb-resume"
             title="resume"
             width="1000px"
             height="600px"

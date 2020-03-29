@@ -1,7 +1,7 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
-import resume from "../assets/files/Resume.pdf";
+import resume from "../assets/files/front_end_resume4.pdf";
 import Container from "react-bootstrap/Container";
 
 function ResumeDisplayer(props) {

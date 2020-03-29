@@ -7,6 +7,8 @@ import Image from "react-bootstrap/Image";
 
 import downloadImg from "../assets/images/download.png";
 
+import resume from "../assets/files/front_end_resume4.pdf";
+
 import { Link } from "react-router-dom";
 
 function Hero(props) {
@@ -33,7 +35,7 @@ function Hero(props) {
               >
                 {`${props.title}\t`}
                 {props.title === "Download Resume" ? (
-                  <Link to="/files/Resume.pdf" target="_blank" download>
+                  <Link to={resume} target="_blank" download>
                     <Image
                       width="100px"
                       height="100px"

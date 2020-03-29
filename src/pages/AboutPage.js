@@ -10,7 +10,7 @@ function AboutPage(props) {
 
       <Content>
         <h1 className="sc-custom-text-1 sb-white">
-          One of my favorite questions to ask.
+          One of my favorite questions.
         </h1>
         <h5 className="sc-custom-text-1 sb-white">
           My name is Scott Braaten, and I am a nomad. I have lived in Moscow,
